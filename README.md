@@ -1,12 +1,12 @@
 
 
-ShenAleph
+ShenAleph2.0
 ===
 
 This is the WP theme for Shenandoah vol 70, issue 1, cloned from
-Shenandoah vol 69, issue 1 theme.
+Shenandoah vol 71, issue 1 theme.
 
-This theme is based on the starter theme called `_s`, or `underscores`.
+This theme originally based on the starter theme called `_s`, or `underscores`.
 
 
 
