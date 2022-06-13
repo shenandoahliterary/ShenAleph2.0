@@ -40,7 +40,6 @@
 			<div class="col offset-md-1">
 				<div class="volumeIssueBanner">
 				<span class="">Volume 71, Number 1 &middot; Fall 2021</span>
-				<button type="button" class="btn btn-info">Volume 71, Number 1 &middot; Fall 2021</button>
 				</div>
 		</div>
 			<div class="col-5">
