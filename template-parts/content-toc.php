@@ -333,7 +333,7 @@ foreach ($authornames as $author_id=>$author_lastname) { ?>
 			<?php
 			remove_all_filters('posts_orderby');
 			$poetry_args = array(
-				'category_name' => 'poetry',
+				'category_name' => 'guest-poetry',
 				'order' => 'ASC',
 				'meta_key' => 'TOC_order',
 				'orderby' => 'meta_value_num',
@@ -420,7 +420,7 @@ foreach ($authornames as $author_id=>$author_lastname) { ?>
 			<?php
 			remove_all_filters('posts_orderby');
 			$poetry_args = array(
-				'category_name' => 'guest-poetry',
+				'category_name' => 'poetry',
 				'order' => 'ASC',
 				'meta_key' => 'TOC_order',
 				'orderby' => 'meta_value_num',
