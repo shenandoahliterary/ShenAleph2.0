@@ -136,7 +136,9 @@ add_action( 'widgets_init', 'shenAleph_widgets_init' );
  * Enqueue scripts and styles.
  */
 function shenAleph_scripts() {
-	wp_enqueue_style( 'bootstrap_css', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
+	//Add Bootstrap via CDN. Updated from 4.3.1 to 5.2
+	//wp_enqueue_style( 'bootstrap_css', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
+	wp_enqueue_style( 'bootstrap_css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css');
 	wp_enqueue_style( 'shenAleph', get_stylesheet_uri() );
 
   wp_enqueue_style('font', '//shenandoahliterary.org/691/wp-content/themes/ShenAleph/thein/Theinhardt-Medium.css');
@@ -145,7 +147,8 @@ function shenAleph_scripts() {
 	wp_enqueue_style('font-awesome', '//use.fontawesome.com/releases/v5.5.0/css/all.css');
 
 
-	wp_enqueue_script( 'bootstrap_js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js');
+	//wp_enqueue_script( 'bootstrap_js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js');
+	wp_enqueue_script( 'bootstrap_js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js');
 
 	wp_enqueue_script( 'shenAleph-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
