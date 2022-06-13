@@ -443,7 +443,7 @@ foreach ($authornames as $author_id=>$author_lastname) { ?>
 				?>
 
 		</div>
-
+		<p>&nbsp;</p>
 		<h3>Poetry</h3>
 		<div>
 
