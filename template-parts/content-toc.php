@@ -29,9 +29,8 @@ $upload_path =  $uploads['baseurl'];
 
 <div class="row">
 	<div class="col-md-4 offset-md-1 TOC-column-1">
-		<h3>Fiction<br>
-		guest edited by<br>
-		Jenzo DuQue</h3>
+		<h3>Fiction
+		</h3>
 		<div>
 			<?php
 			remove_all_filters('posts_orderby');
@@ -410,6 +409,11 @@ foreach ($authornames as $author_id=>$author_lastname) { ?>
 
 	</div> <!-- close column -->
 	<div class="col-md-4 offset-md-1">
+	<h3>Poetry<br>
+		guest edited by<br>
+		Sylvia Jones</h3>
+
+
 		<h3>Poetry</h3>
 		<div>
 
