@@ -138,7 +138,7 @@ if (! empty($extra_content)) {
 	?>
 <!-- add navigation between works: previous/next in this issue -->
 <p class="text-center">Previous in this issue: <?php  previous_post_link( '%link', '%title');?></a> | Next in this issue: <?php  next_post_link( '%link', '%title');?></p>
-
+<?php previous_post_link( '%link', '%title', true, ' ', 'TOCorder' ); ?>
 
 
 	<footer class="entry-footer">
