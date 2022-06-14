@@ -137,7 +137,7 @@ if (! empty($extra_content)) {
 
 	?>
 <!-- add navigation between works: previous/next in this issue -->
-
+<p><a href="">Previous in Issue</a> | <a href="">Next in Issue</a></p>
 
 
 
