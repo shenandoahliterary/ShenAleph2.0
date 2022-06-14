@@ -142,7 +142,7 @@ if (! empty($extra_content)) {
 if ($link = previous_post_link( '%link', '%title')) {
  
 }?>
-  Next in this issue: <?php  next_post_link( '%link', '%title');?></p>
+  Next in this issue:::: <?php  next_post_link( '%link', '%title');?></p>
 <?php previous_post_link( '%link', '%title', true, ' ', 'TOCorder' ); ?>
 
 
