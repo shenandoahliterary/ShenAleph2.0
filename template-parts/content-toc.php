@@ -11,7 +11,7 @@ $uploads = wp_upload_dir();
 $upload_path =  $uploads['baseurl'];
 /* need to set image in admin dashboard */
 	?>
-<img  class="img-fluid cover-image m-auto" src="<?php echo $upload_path ?>/2021/11/Sharma-Manjari-art-scaled.jpg">
+<img  class="img-fluid cover-image m-auto" src="<?php echo $upload_path ?>/2022/06/572x700.jpg">
 </div>
 <p class="text-right art-credit"><em>Pink Room</em><br /><a href="">Kathleen Olson-Janjic</a>, [material type?]</p>
 
