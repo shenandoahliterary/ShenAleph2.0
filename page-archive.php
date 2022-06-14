@@ -1,5 +1,7 @@
 <?php
-/* Template Name: Custom Template */
+/* 
+Template Name: Archvies 
+*/
 
 get_header();
 ?>
