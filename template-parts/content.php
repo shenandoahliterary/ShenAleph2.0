@@ -135,11 +135,12 @@ if (! empty($extra_content)) {
 	echo "$extra_content[0] <br />";
 }
 
-//add navigation between works: previous/next in this issue
-
-
-
 	?>
+<!-- add navigation between works: previous/next in this issue -->
+
+
+
+
 	<footer class="entry-footer">
 		<?php shenAleph_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
