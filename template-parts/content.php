@@ -137,7 +137,7 @@ if (! empty($extra_content)) {
 
 	?>
 <!-- add navigation between works: previous/next in this issue -->
-<p><a href="">Previous in Issue</a> | Next in Issue: <?php  next_post_link( '%link', '%title');?></p>
+<p>Previous in Issue: <?php  previous_post_link( '%link', '%title');?></a> | Next in Issue: <?php  next_post_link( '%link', '%title');?></p>
 
 
 
