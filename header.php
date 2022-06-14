@@ -43,7 +43,7 @@
 				</div>
 		</div>
 			<div class="col-5">
-				<div class="d-inline-flex d-flex flex-column flex-sm-row justify-content-end" >
+				<div class="d-inline-flex d-flex flex-column flex-sm-row justify-content-evenly" >
 					<a class="nav-item nav-link" href="https://shenandoahliterary.org/about/">About</a>
 					<a class="nav-item nav-link" href="https://shenandoahliterary.org/issues/">Issues</a>
 					<a class="nav-item nav-link" href="https://shenandoahliterary.org/submissions/">Submit</a>
