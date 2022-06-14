@@ -140,7 +140,7 @@ if (! empty($extra_content)) {
 <p class="text-center"> <?php 
 
 if ($link = previous_post_link( '%link', '%title')) {
- 
+ echo "Previous in this issue: ";
 }?>
   Next in this issue: <?php  next_post_link( '%link', '%title');?></p>
 <?php previous_post_link( '%link', '%title', true, ' ', 'TOCorder' ); ?>
