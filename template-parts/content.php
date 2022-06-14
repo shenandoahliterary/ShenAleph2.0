@@ -141,8 +141,8 @@ if (! empty($extra_content)) {
 
 previous_post_link( 'Previous in this issue: %link', '%title');
 
-?>
-  Next in this issue: <?php  next_post_link( '%link', '%title');?></p>
+next_post_link( ' | Next in this issue: %link', '%title');?></p>
+
 <?php previous_post_link( '%link', '%title', true, ' ', 'TOCorder' ); ?>
 
 
