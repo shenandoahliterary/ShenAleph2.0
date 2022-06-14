@@ -33,7 +33,7 @@
 				</div>
 				<div class="row">
 		<div class="col offset-md-1">
-			<p id="typelogo"><a href="https://shenandoahLiterary.org/711/">Shenandoah</a></p>
+			<p id="typelogo"><a href="https://shenandoahLiterary.org/712/">Shenandoah</a></p>
 		</div>
 		</div>
 		<div class="row metadata-row d-flex justify-content-between">
