@@ -139,10 +139,10 @@ if (! empty($extra_content)) {
 <!-- add navigation between works: previous/next in this issue -->
 <p class="text-center"> <?php 
 
-if (previous_post_link()) {
- previous_post_link( '%link', '%title');
+if ($link = previous_post_link()) {
+ echo 'Previous in this issue: '.$link.'|';
 }?>
-</a> | Next in this issue: <?php  next_post_link( '%link', '%title');?></p>
+  Next in this issue: <?php  next_post_link( '%link', '%title');?></p>
 <?php previous_post_link( '%link', '%title', true, ' ', 'TOCorder' ); ?>
 
 
