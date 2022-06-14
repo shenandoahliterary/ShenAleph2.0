@@ -138,7 +138,11 @@ if (! empty($extra_content)) {
 	?>
 <!-- add navigation between works: previous/next in this issue -->
 <p><a href="">Previous in Issue</a> | <a href="">Next in Issue</a></p>
+<?php 
+ next_post_link( '%link', 'Next post in this issue', TRUE, '', 'TOCorder' );
 
+
+?>
 
 
 	<footer class="entry-footer">
