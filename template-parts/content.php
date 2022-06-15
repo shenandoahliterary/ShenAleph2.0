@@ -137,11 +137,14 @@ if (! empty($extra_content)) {
 
 	?>
 <!-- add navigation between works: previous/next in this issue -->
-<p class="text-center"> <?php 
+<p class="text-center"> 
+	
+	
 
-previous_post_link( 'Previous in this issue: %link', '%title');
+<?php 
+//previous_post_link( 'Previous in this issue: %link', '%title');
 
-next_post_link( ' | Next in this issue: %link', '%title');?></p>
+//next_post_link( ' | Next in this issue: %link', '%title');?>
 
 <?php 
 //check if taxonomy exists
@@ -150,7 +153,7 @@ $taxonomy_temp = get_taxonomy('TOCorder');
 
 previous_post_link( 'Previous in this issue: %link', '%title', false, ' ', 'TOCorder' ); 
 next_post_link( ' | Next in this issue: %link', '%title', false, ' ', 'TOCorder' ); 
-?>
+?></p>
 
 
 	<footer class="entry-footer">
