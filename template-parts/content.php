@@ -147,20 +147,6 @@ next_post_link( ' | Next in this issue: %link', '%title');?></p>
 //check if taxonomy exists
 $taxonomy_temp = get_taxonomy('TOCorder');
  
-//display all registered taxonomies
-$taxonomies = get_taxonomies();
-if ( ! empty($taxonomies)) : ?>
-
-<ul>
-<?php 
-foreach ($taxonomies as $taxonomy) {
-	echo '<li>' . $taxonomy . '</li>';
-}
-
-?>
-</ul>
-<?php 
-endif; 
 
 previous_post_link( '%link', '%title', true, ' ', 'TOCorder' ); ?>
 
