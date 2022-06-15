@@ -146,7 +146,7 @@ next_post_link( ' | Next in this issue: %link', '%title');?></p>
 <?php 
 //check if taxonomy exists
 $taxonomy_temp = get_taxonomy('TOCorder');
-echo "Taxonomy: $taxonomy_temp";
+//echo "Taxonomy: $taxonomy_temp";
 
 
 previous_post_link( '%link', '%title', true, ' ', 'TOCorder' ); ?>
