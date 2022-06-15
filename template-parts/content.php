@@ -143,7 +143,13 @@ previous_post_link( 'Previous in this issue: %link', '%title');
 
 next_post_link( ' | Next in this issue: %link', '%title');?></p>
 
-<?php previous_post_link( '%link', '%title', true, ' ', 'TOCorder' ); ?>
+<?php 
+//check if taxonomy exists
+$taxonomy_temp = get_taxonomy('TOCorder');
+echo "Taxonomy: $taxonomy_temp";
+
+
+previous_post_link( '%link', '%title', true, ' ', 'TOCorder' ); ?>
 
 
 	<footer class="entry-footer">
