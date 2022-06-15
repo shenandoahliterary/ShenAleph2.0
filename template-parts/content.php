@@ -148,6 +148,7 @@ if (! empty($extra_content)) {
 
 <?php 
 //check if taxonomy exists
+//need to order posts within taxonomy. Defaults to chronological order.
 $taxonomy_temp = get_taxonomy('TOCorder');
  
 
