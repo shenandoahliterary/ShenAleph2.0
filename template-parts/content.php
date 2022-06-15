@@ -149,7 +149,7 @@ $taxonomy_temp = get_taxonomy('TOCorder');
  
 
 previous_post_link( 'Previous in this issue: %link', '%title', false, ' ', 'TOCorder' ); 
-next_post_link( 'Next in this issue: %link', '%title', false, ' ', 'TOCorder' ); 
+next_post_link( ' | Next in this issue: %link', '%title', false, ' ', 'TOCorder' ); 
 ?>
 
 
