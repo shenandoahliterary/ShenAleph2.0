@@ -159,7 +159,10 @@ foreach ($taxonomies as $taxonomy) {
 
 ?>
 </ul>
-<?php previous_post_link( '%link', '%title', true, ' ', 'TOCorder' ); ?>
+<?php 
+endif; 
+
+previous_post_link( '%link', '%title', true, ' ', 'TOCorder' ); ?>
 
 
 	<footer class="entry-footer">
