@@ -148,7 +148,9 @@ next_post_link( ' | Next in this issue: %link', '%title');?></p>
 $taxonomy_temp = get_taxonomy('TOCorder');
  
 
-previous_post_link( 'Previous in this ...: %link', '%title', false, ' ', 'TOCorder' ); ?>
+previous_post_link( 'Previous in this issue: %link', '%title', false, ' ', 'TOCorder' ); 
+next_post_link( 'Next in this issue: %link', '%title', false, ' ', 'TOCorder' ); 
+?>
 
 
 	<footer class="entry-footer">
