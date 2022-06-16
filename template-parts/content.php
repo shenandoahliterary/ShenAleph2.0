@@ -154,9 +154,12 @@ if ($terms != null) {
 		//worked.
 		echo  "<p>Terms: $term->slug</p>";
 		echo  "<p>Terms order: $term->order</p>";
-		//place term->order in variable
+		//place term->order in variable. 
 		$termOrder = $term->order;
 		echo "<p>Term order variable: $termOrder</p>";
+		//increment term order
+		$nextTermByOrder = $termOrder++;
+		echo "<p>Term order variable: $nextTermOrder</p>";
 		unset($term);
 	}
 }
