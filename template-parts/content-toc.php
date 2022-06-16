@@ -11,7 +11,9 @@ $uploads = wp_upload_dir();
 $upload_path =  $uploads['baseurl'];
 /* need to set image in admin dashboard */
 	?>
-<img class="d-inline-flex" src="<?php echo $upload_path ?>/2022/06/408x500.jpg">
+	<div class="col">
+<img src="<?php echo $upload_path ?>/2022/06/408x500.jpg">
+</div>
 </div>
 <p class="text-right art-credit"><em>Pink Room</em><br /><a href="">Kathleen Olson-Janjic</a></p>
 
@@ -22,6 +24,7 @@ $upload_path =  $uploads['baseurl'];
 	<div class="row">
 		<div class="col-md-8 offset-md-2 single-space-paragraphs">
 	<p><a href="https://shenandoahliterary.org/712/editors-note/">Editor&rsquo;s Note</a><br /><span class="author_name">Brenna Womer</span></p>
+
 		</div>
 	</div>
 <p>&nbsp;</p>
