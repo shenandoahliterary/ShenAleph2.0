@@ -187,11 +187,6 @@ foreach ($term_obj_list as $tax) {
 	
 
 <?php 
-//previous_post_link( 'Previous in this issue: %link', '%title');
-
-//next_post_link( ' | Next in this issue: %link', '%title');?>
-
-<?php 
 //check if taxonomy exists
 //need to order posts within taxonomy. Defaults to chronological order.
 $taxonomy_temp = get_taxonomy('TOCorder');
