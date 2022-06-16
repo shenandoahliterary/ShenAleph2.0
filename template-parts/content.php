@@ -141,17 +141,6 @@ if (! empty($extra_content)) {
 <p><strong>Pre-Publication Testing</strong>: please ignore anything below.</p>
 
 <?php 
-//determine if you're in the loop.
-//returned true:definitely is in loop.
-if (in_the_loop()) {
-	echo "<p>In the loop</p>";
-
-}
-	else {
-		echo "<p>Not in the loop.</p>";
-	}
-
-
 
 
 
