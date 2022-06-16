@@ -170,7 +170,7 @@ if ($terms != null) {
 $term_obj_list = get_the_terms($post->ID, 'TOCorder');
 $terms_string = join(',', wp_list_pluck($term_obj_list, 'Order'));
 echo "<p>Order: $terms_string</p>";
-echo "<p>Order: $term_obj_list[0]</p>";
+echo "<p>Order: $term_obj_list</p>";
 
 
 
