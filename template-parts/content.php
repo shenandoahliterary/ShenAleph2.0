@@ -174,7 +174,7 @@ if ($terms != null) {
 		
 <p>Test link: <a href="
 <?php //echo get_permanlink(prev_post->ID); ?>">
-<?php //echo get_the_title($prev_post->ID); ?></a></p>
+<?php echo get_the_title($prev_post->ID); ?></a></p>
 	
 
 		<?php
