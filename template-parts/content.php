@@ -146,7 +146,7 @@ $terms = get_the_terms( $post->ID, 'TOCorder');
 
 if ($terms != null) {
 	foreach($terms as $term) {
-		print $term->slug;
+		echo  "<p>$term->slug</p>";
 		unset($term);
 	}
 }
