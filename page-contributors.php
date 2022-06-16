@@ -1,7 +1,7 @@
 <?php
 /**
  * template for the Contributors page
- *
+ * Template Name: Contributors 
  *
  * @package ShenAleph
  */
