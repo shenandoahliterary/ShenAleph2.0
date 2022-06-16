@@ -175,35 +175,7 @@ if ($terms != null) {
 		
 <p>Test link: <a href="
 <?php //echo get_permanlink(prev_post->ID); ?>">
-<?php echo get_the_title($prev_post->ID); ?></a></p>
-	
 
-		<?php
-	}
-}
-
-//test 2: did not work. Why? Neither Order returns anything. 2nd returns "Array"
-$term_obj_list = get_the_terms($post->ID, 'TOCorder');
-$terms_string = join(',', wp_list_pluck($term_obj_list, 'Order'));
-echo "<p>Order: $terms_string</p>";
-echo "<p>Order: $term_obj_list</p>";
-
-//test 3: 
-if ($terms != null) {
-foreach ($term_obj_list as $tax) {
-	//works
-	echo '<p>Orders:'. $tax->name .'</p>';
-}
-} else {
-	//taxonomy is null
-	echo "<p>Order are null.</p>";
-}
-
-
-
-
-
-?>
 
 
 <!-- add navigation between works: previous/next in this issue -->
