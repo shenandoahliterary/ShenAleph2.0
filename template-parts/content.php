@@ -174,8 +174,12 @@ echo "<p>Order: $terms_string</p>";
 echo "<p>Order: $term_obj_list</p>";
 
 //test 3: 
+if ($terms != null) {
 foreach ($term_obj_list as $tax) {
 	echo '<p>Orders:'. $tax->name .'</p>';
+}
+} else {
+	echo "<p>Order are null.</p>";
 }
 
 
