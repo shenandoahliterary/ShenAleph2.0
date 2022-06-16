@@ -166,7 +166,11 @@ if ($terms != null) {
 		unset($term);
 		$prev_post = get_adjacent_post_link(false,'',true,'TOCorder');
 		?>
-<a href="<?php echo get_permanlink(prev_post->ID); ?>"><?php echo get_the_title($prev_post->ID); ?></a>
+		
+<a href="
+<?php //echo get_permanlink(prev_post->ID); ?>">
+<?php //echo get_the_title($prev_post->ID); ?></a>
+	
 
 		<?php
 	}
