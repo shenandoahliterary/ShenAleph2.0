@@ -158,8 +158,8 @@ if ($terms != null) {
 		$termOrder = $term->order;
 		echo "<p>Term order variable: $termOrder</p>";
 		//increment term order
-		$nextTermByOrder = $termOrder+1;
-		echo "<p>Term order variable: $nextTermOrder</p>";
+		$nextTermByOrder = $termOrder++;
+		echo "<p>Term order variable: $nextTermByOrder</p>";
 		unset($term);
 	}
 }
