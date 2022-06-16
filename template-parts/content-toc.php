@@ -5,7 +5,7 @@
  */
 ?>
 <section class="container">
-<div class="row cover-row">
+<div class="row">
 	<?php
 $uploads = wp_upload_dir();
 $upload_path =  $uploads['baseurl'];
