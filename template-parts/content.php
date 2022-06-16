@@ -164,8 +164,11 @@ if ($terms != null) {
 		$previousTermByOrder = --$term->order;
 		echo "<p>Term previous order variable: $previousTermByOrder</p>";
 		unset($term);
-		get_adjacent_post_link(false,'',true,'TOCorder');
-		previous_post_link( 'Previous in this issue: %link', '%title', false, ' ', 'TOCorder' ); 
+		$prev_post = get_adjacent_post_link(false,'',true,'TOCorder');
+		?>
+<a href="<?php echo get_permanlink(prev_post->ID); ?>"><?php echo get_the_title($prev_post->ID); ?></a>
+
+		<?php
 	}
 }
 
