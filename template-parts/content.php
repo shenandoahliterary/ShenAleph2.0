@@ -161,7 +161,7 @@ if ($terms != null) {
 		$nextTermByOrder = ++$termOrder;
 		echo "<p>Term next order variable: $nextTermByOrder</p>";
 		//decrement term order
-		$previousTermByOrder = --$termOrder;
+		$previousTermByOrder = --$term->order;
 		echo "<p>Term previous order variable: $previousTermByOrder</p>";
 		unset($term);
 	}
