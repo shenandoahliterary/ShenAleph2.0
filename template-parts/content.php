@@ -164,7 +164,7 @@ if ($terms != null) {
 	foreach($terms as $term) {
 		//worked.
 		echo  "<p>Terms: $term->slug</p>";
-		echo  "<p>Terms: $term->Order</p>";
+		echo  "<p>Terms order: $term->order</p>";
 		unset($term);
 	}
 }
