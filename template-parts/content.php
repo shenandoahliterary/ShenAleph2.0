@@ -152,20 +152,20 @@ $terms = get_the_terms( $post->ID, 'TOCorder');
 if ($terms != null) {
 	foreach($terms as $term) {
 		//worked.
-		echo  "<p>Terms: $term->slug</p>";
-		echo  "<p>Terms order: $term->order</p>";
+		//echo  "<p>Terms: $term->slug</p>";
+		//echo  "<p>Terms order: $term->order</p>";
 		//place term->order in variable. 
 		$termOrder = $term->order;
-		echo "<p>Term order variable: $termOrder</p>";
+		//echo "<p>Term order variable: $termOrder</p>";
 		//increment term order
 		$nextTermByOrder = ++$termOrder;
-		echo "<p>Term next order variable: $nextTermByOrder</p>";
+		//echo "<p>Term next order variable: $nextTermByOrder</p>";
 		//decrement original term order
 		$previousTermByOrder = --$term->order;
-		echo "<p>Term previous order variable: $previousTermByOrder</p>";
+		//echo "<p>Term previous order variable: $previousTermByOrder</p>";
 		//this is not providing the adjacent post in the taxonomy
 		$prev_post = get_adjacent_post(false,'',true,'TOCorder');
-		echo "<p>Previous post: $prev_post->ID</p>";
+		//echo "<p>Previous post: $prev_post->ID</p>";
 		//find post with previous termorder/get post by taxonomy slug (same as previousTermByOrder) and get post ID
 
 
@@ -175,7 +175,7 @@ if ($terms != null) {
 		
 <p>Test link: <a href="
 <?php //echo get_permanlink(prev_post->ID); ?>">
-<?php echo get_the_title($prev_post->ID); ?></a></p>
+<?php //echo get_the_title($prev_post->ID); ?></a></p>
 	
 
 		<?php
@@ -185,18 +185,18 @@ if ($terms != null) {
 //test 2: did not work. Why? Neither Order returns anything. 2nd returns "Array"
 $term_obj_list = get_the_terms($post->ID, 'TOCorder');
 $terms_string = join(',', wp_list_pluck($term_obj_list, 'Order'));
-echo "<p>Order: $terms_string</p>";
-echo "<p>Order: $term_obj_list</p>";
+//echo "<p>Order: $terms_string</p>";
+//echo "<p>Order: $term_obj_list</p>";
 
 //test 3: 
 if ($terms != null) {
 foreach ($term_obj_list as $tax) {
 	//works
-	echo '<p>Orders:'. $tax->name .'</p>';
+	//echo '<p>Orders:'. $tax->name .'</p>';
 }
 } else {
 	//taxonomy is null
-	echo "<p>Order are null.</p>";
+	//echo "<p>Order are null.</p>";
 }
 
 
