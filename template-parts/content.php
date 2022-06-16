@@ -154,11 +154,14 @@ if ($terms != null) {
 		//worked.
 		echo  "<p>Terms: $term->slug</p>";
 		echo  "<p>Terms order: $term->order</p>";
+		//place term->order in variable
+		$termOrder = $term->order;
+		echo "<p>Term order variable: $termOrder</p>";
 		unset($term);
 	}
 }
 
-//test 2: did not work. Why? Test post did not have value for this taxonomy. Duh. 
+//test 2: did not work. Why? Neither Order returns anything. 2nd returns "Array"
 $term_obj_list = get_the_terms($post->ID, 'TOCorder');
 $terms_string = join(',', wp_list_pluck($term_obj_list, 'Order'));
 echo "<p>Order: $terms_string</p>";
@@ -167,6 +170,7 @@ echo "<p>Order: $term_obj_list</p>";
 //test 3: 
 if ($terms != null) {
 foreach ($term_obj_list as $tax) {
+	//works
 	echo '<p>Orders:'. $tax->name .'</p>';
 }
 } else {
