@@ -160,10 +160,12 @@ if ($terms != null) {
 		//increment term order
 		$nextTermByOrder = ++$termOrder;
 		echo "<p>Term next order variable: $nextTermByOrder</p>";
-		//decrement term order
+		//decrement original term order
 		$previousTermByOrder = --$term->order;
 		echo "<p>Term previous order variable: $previousTermByOrder</p>";
 		unset($term);
+		get_adjacent_post_link(false,'',true,'TOCorder');
+		previous_post_link( 'Previous in this issue: %link', '%title', false, ' ', 'TOCorder' ); 
 	}
 }
 
