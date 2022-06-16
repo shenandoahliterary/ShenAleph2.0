@@ -140,6 +140,14 @@ if (! empty($extra_content)) {
 <!-- TEST AREA: REMOVE FROM PRODUCTION-->
 <p><strong>Pre-Publication Testing</strong>: please ignore anything below.</p>
 
+<?php 
+//get tax term for this post.
+foreach ( get_the_terms( get_the_ID(), 'TOCorder') as $tax ) {
+	echo '<p>'. __( $tax->name ) . '</p>';
+}
+
+?>
+
 
 <!-- add navigation between works: previous/next in this issue -->
 <p class="text-center"> 
