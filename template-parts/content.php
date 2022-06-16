@@ -157,6 +157,7 @@ if (in_the_loop()) {
 
 //get tax term for this post.
 //test 1: did not work
+/*
 $terms = get_the_terms( $post->ID, 'TOCorder');
 
 if ($terms != null) {
@@ -165,12 +166,19 @@ if ($terms != null) {
 		unset($term);
 	}
 }
-
-//test 2
+*/
+//test 2: did not work
 $term_obj_list = get_the_terms($post->ID, 'TOCorder');
 $terms_string = join(',', wp_list_pluck($term_obj_list, 'Order'));
 echo "<p>Order: $terms_string</p>";
 echo "<p>Order: $term_obj_list</p>";
+
+//test 3: 
+foreach (get_the_terms(get_the_ID(), 'TOCorder') as $tax) {
+	echo '<p>Order:'. $tax->name .'</p>';
+}
+
+
 
 
 
