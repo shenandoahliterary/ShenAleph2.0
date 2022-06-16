@@ -142,8 +142,13 @@ if (! empty($extra_content)) {
 
 <?php 
 //get tax term for this post.
-foreach ( get_the_terms( get_the_ID(), 'TOCorder') as $tax ) {
-	echo '<p>'. __( $tax->name ) . '</p>';
+$terms = get_the_terms( $post->ID, 'TOCorder');
+
+if ($terms != null) {
+	foreach($terms as $term) {
+		print $term->slug;
+		unset($term);
+	}
 }
 
 ?>
