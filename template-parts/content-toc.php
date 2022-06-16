@@ -13,7 +13,7 @@ $upload_path =  $uploads['baseurl'];
 	?>
 <img  class="cover-image m-auto" src="<?php echo $upload_path ?>/2022/06/408x500.jpg">
 </div>
-<p class="text-right art-credit"><em>Pink Room</em><br /><a href="">Kathleen Olson-Janjic</a>, [material type?]</p>
+<p class="text-right art-credit"><em>Pink Room</em><br /><a href="">Kathleen Olson-Janjic</a></p>
 
 </section>
 
