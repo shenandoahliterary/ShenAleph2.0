@@ -162,7 +162,9 @@ $terms = get_the_terms( $post->ID, 'TOCorder');
 
 if ($terms != null) {
 	foreach($terms as $term) {
+		//worked.
 		echo  "<p>Terms: $term->slug</p>";
+		echo  "<p>Terms: $term->Order</p>";
 		unset($term);
 	}
 }
