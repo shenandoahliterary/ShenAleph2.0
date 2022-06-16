@@ -191,7 +191,7 @@ echo "<p>Order: $term_obj_list</p>";
 //check if taxonomy exists
 //need to order posts within taxonomy. Defaults to chronological order.
 $taxonomy_temp = get_taxonomy('TOCorder');
-echo "<p>Taxonomy: $taxonomy_temp</p>";
+//echo "<p>Taxonomy: $taxonomy_temp</p>";
  
 
 previous_post_link( 'Previous in this issue...: %link', '%title', false, ' ', 'TOCorder' ); 
