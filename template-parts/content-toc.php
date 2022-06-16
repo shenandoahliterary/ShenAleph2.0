@@ -15,7 +15,7 @@ $upload_path =  $uploads['baseurl'];
 		<div class="text-center">
 <img class="" src="<?php echo $upload_path ?>/2022/06/408x500.jpg">
 		</div>
-<p class="d-inline-flex justify-content-center"><em>Pink Room</em>, <a href="">Kathleen Olson-Janjic</a></p>
+<p class="d-flex justify-content-center"><em>Pink Room</em>,&nbsp;&nbsp; <a href="">Kathleen Olson-Janjic</a></p>
 	</div>
 </div>
 
