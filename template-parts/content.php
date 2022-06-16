@@ -136,6 +136,11 @@ if (! empty($extra_content)) {
 }
 
 	?>
+
+<!-- TEST AREA: REMOVE FROM PRODUCTION-->
+<p><strong>Pre-Publication Testing</strong>: please ignore anything below.</p>
+
+
 <!-- add navigation between works: previous/next in this issue -->
 <p class="text-center"> 
 	
