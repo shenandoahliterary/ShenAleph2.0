@@ -143,9 +143,9 @@ if (! empty($extra_content)) {
 <?php 
 //determine if you're in the loop
 if (in_the_loop()) {
-	echo "<p>In the loop</p>";
+	//echo "<p>In the loop</p>";
 	else {
-		echo "<p>Not in the loop.</p>";
+		//echo "<p>Not in the loop.</p>";
 	}
 }
 
