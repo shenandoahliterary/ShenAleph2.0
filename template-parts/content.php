@@ -141,6 +141,17 @@ if (! empty($extra_content)) {
 <p><strong>Pre-Publication Testing</strong>: please ignore anything below.</p>
 
 <?php 
+//determine if you're in the loop
+if (in_the_loop()) {
+	echo "<p>In the loop</p>";
+	else {
+		echo "<p>Not in the loop.</p>";
+	}
+}
+
+
+
+
 //get tax term for this post.
 $terms = get_the_terms( $post->ID, 'TOCorder');
 
