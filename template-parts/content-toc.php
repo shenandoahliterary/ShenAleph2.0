@@ -11,7 +11,7 @@ $uploads = wp_upload_dir();
 $upload_path =  $uploads['baseurl'];
 /* need to set image in admin dashboard */
 	?>
-	<div class="col-md-auto">
+	<div class="col-md-8">
 <img src="<?php echo $upload_path ?>/2022/06/408x500.jpg">
 </div>
 </div>
