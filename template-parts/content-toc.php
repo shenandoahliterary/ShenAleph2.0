@@ -11,8 +11,8 @@ $uploads = wp_upload_dir();
 $upload_path =  $uploads['baseurl'];
 /* need to set image in admin dashboard */
 	?>
-	<div class="col-md-8 d-flex align-content-center">
-<img src="<?php echo $upload_path ?>/2022/06/408x500.jpg">
+	<div class="col-md-8">
+<img class="d-flex align-content-center" src="<?php echo $upload_path ?>/2022/06/408x500.jpg">
 </div>
 </div>
 <p class="text-right art-credit"><em>Pink Room</em><br /><a href="">Kathleen Olson-Janjic</a></p>
