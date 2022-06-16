@@ -138,7 +138,7 @@ if (! empty($extra_content)) {
 	?>
 
 <!-- TEST AREA: REMOVE FROM PRODUCTION-->
-<p><strong>Pre-Publication Testing</strong>: please ignore anything below.</p>
+ 
 
 <?php 
 
