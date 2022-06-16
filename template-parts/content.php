@@ -157,17 +157,17 @@ if (in_the_loop()) {
 
 //get tax term for this post.
 //test 1: did not work
-/*
+
 $terms = get_the_terms( $post->ID, 'TOCorder');
 
 if ($terms != null) {
 	foreach($terms as $term) {
-		echo  "<p>$term->slug</p>";
+		echo  "<p>Terms: $term->slug</p>";
 		unset($term);
 	}
 }
-*/
-//test 2: did not work. Why?
+
+//test 2: did not work. Why? Test post did not have value for this taxonomy. Duh. 
 $term_obj_list = get_the_terms($post->ID, 'TOCorder');
 $terms_string = join(',', wp_list_pluck($term_obj_list, 'Order'));
 echo "<p>Order: $terms_string</p>";
@@ -179,6 +179,7 @@ foreach ($term_obj_list as $tax) {
 	echo '<p>Orders:'. $tax->name .'</p>';
 }
 } else {
+	//taxonomy is null
 	echo "<p>Order are null.</p>";
 }
 
