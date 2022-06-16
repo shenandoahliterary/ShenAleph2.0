@@ -165,11 +165,12 @@ if ($terms != null) {
 		echo "<p>Term previous order variable: $previousTermByOrder</p>";
 		unset($term);
 		$prev_post = get_adjacent_post_link(false,'',true,'TOCorder');
+		echo "<p>Previous post: $prev_post</p>"
 		?>
 		
-<a href="
+<p>Test link: <a href="
 <?php //echo get_permanlink(prev_post->ID); ?>">
-<?php //echo get_the_title($prev_post->ID); ?></a>
+<?php //echo get_the_title($prev_post->ID); ?></a></p>
 	
 
 		<?php
