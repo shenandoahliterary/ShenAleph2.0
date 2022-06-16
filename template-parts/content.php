@@ -163,7 +163,7 @@ if ($terms != null) {
 		//decrement original term order
 		$previousTermByOrder = --$term->order;
 		echo "<p>Term previous order variable: $previousTermByOrder</p>";
-		$prev_post = get_adjacent_post(false,'',false,'TOCorder');
+		$prev_post = get_adjacent_post(false,'',true,'TOCorder');
 		echo "<p>Previous post: $prev_post->ID</p>";
 		
 
