@@ -215,8 +215,8 @@ foreach ($term_obj_list as $tax) {
 
  
 
-previous_post_link( 'Previous in this issue: %link', '%title', false, ' ', 'TOCorder' ); 
-next_post_link( ' | Next in this issue: %link', '%title', false, ' ', 'TOCorder' ); 
+//previous_post_link( 'Previous in this issue: %link', '%title', false, ' ', 'TOCorder' ); 
+//next_post_link( ' | Next in this issue: %link', '%title', false, ' ', 'TOCorder' ); 
 ?></p>
 
 
