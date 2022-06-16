@@ -167,15 +167,15 @@ if ($terms != null) {
 	}
 }
 */
-//test 2: did not work
+//test 2: did not work. Why?
 $term_obj_list = get_the_terms($post->ID, 'TOCorder');
 $terms_string = join(',', wp_list_pluck($term_obj_list, 'Order'));
 echo "<p>Order: $terms_string</p>";
 echo "<p>Order: $term_obj_list</p>";
 
 //test 3: 
-foreach (get_the_terms(get_the_ID(), 'TOCorder') as $tax) {
-	echo '<p>Order:'. $tax->name .'</p>';
+foreach ($term_obj_list as $tax) {
+	echo '<p>Orders:'. $tax->name .'</p>';
 }
 
 
