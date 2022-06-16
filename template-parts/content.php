@@ -142,10 +142,10 @@ if (! empty($extra_content)) {
 
 <?php 
 //determine if you're in the loop.
-//returned true: is in loop.
+//returned true:definitely is in loop.
 if (in_the_loop()) {
 	echo "<p>In the loop</p>";
-	the_title( '<h1 class="entry-title">', '</h1>' );
+
 }
 	else {
 		echo "<p>Not in the loop.</p>";
@@ -156,6 +156,7 @@ if (in_the_loop()) {
 
 
 //get tax term for this post.
+//test 1: did not work
 $terms = get_the_terms( $post->ID, 'TOCorder');
 
 if ($terms != null) {
@@ -164,6 +165,13 @@ if ($terms != null) {
 		unset($term);
 	}
 }
+
+//test 2
+$term_obj_list = get_the_terms($post->ID, 'TOCorder');
+$terms_string = join(',', wp_list_pluck($term_obj_list, 'order'));
+echo "<p>Order: $terms_string</p>";
+
+
 
 ?>
 
