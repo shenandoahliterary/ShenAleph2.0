@@ -362,8 +362,7 @@ foreach ($authornames as $author_id=>$author_lastname) {
 'order' => 'asc',
 'nopaging' => 'true'
 );
-?>
-<?php
+
 //start WP loop
 $comics_loop_single = new WP_Query($args);
 
