@@ -1,4 +1,4 @@
-=== ShenAleph ===
+=== ShenAleph 2.0 ===
 
 Contributors: automattic
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
