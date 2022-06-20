@@ -329,8 +329,8 @@ foreach ($authornames as $author_id=>$author_lastname) { ?>
 		<div>
 		<?php
 			remove_all_filters('posts_orderby');
-			$poetry_args = array(
-				'category_name' => 'guest-poetry',
+			$comics_args = array(
+				'category_name' => 'comics',
 				'order' => 'ASC',
 				'meta_key' => 'TOC_order',
 				'orderby' => 'meta_value_num',
@@ -339,10 +339,10 @@ foreach ($authornames as $author_id=>$author_lastname) { ?>
 
 			);
 
-			$poetry_loop = new WP_Query($poetry_args);
+			$comics_loop = new WP_Query($comics_args);
 				$authornames = array();
 
-					while ($poetry_loop->have_posts()) : $poetry_loop->the_post();
+					while ($comics_loop->have_posts()) : $comics_loop->the_post();
 						$this_author= get_post_meta($post->ID, 'author_lastname', true);
 						$this_author_id =get_the_author_meta('ID');
 						$authornames[$this_author_id] = $this_author;
@@ -367,7 +367,7 @@ foreach ($authornames as $author_id=>$author_lastname) { ?>
 
 				foreach ($authornames as $author_id=>$author_lastname) {
 					$args = array(
-				'category_name' => 'guest-poetry',
+				'category_name' => 'comics',
 				'author' => $author_id,
 				'orderby' => 'date',
 				'order' => 'asc',
@@ -375,12 +375,12 @@ foreach ($authornames as $author_id=>$author_lastname) { ?>
 				);
 				?>
 				<?php
-				$poetry_loop_single = new WP_Query($args);
+				$comics_loop_single = new WP_Query($args);
 
 				$i = 0;
 				//open paragraph for title(s)/author
 				echo "<p>";
-					while ($poetry_loop_single->have_posts()) : 				$poetry_loop_single->the_post();
+					while ($comics_loop_single->have_posts()) : 				$comics_loop_single->the_post();
 					//for each author, print title, title, author
 					?>
 
