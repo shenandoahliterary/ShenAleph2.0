@@ -352,6 +352,33 @@ foreach ($authornames as $author_id=>$author_lastname) { ?>
 
 					</p>
 				<?php endwhile;
+//group posts by author
+
+foreach ($authornames as $author_id=>$author_lastname) {
+	$args = array(
+'category_name' => 'comics',
+'author' => $author_id,
+'orderby' => 'date',
+'order' => 'asc',
+'nopaging' => 'true'
+);
+?>
+<?php
+//start WP loop
+$comics_loop_single = new WP_Query($args);
+
+$i = 0;
+//open paragraph for title(s)/author
+echo "<p>";
+	while ($comics_loop_single->have_posts()) : 				$comics_loop_single->the_post();
+	//for each author, print title,  author
+	?>
+
+	<a href="<?php the_permalink(); ?>">
+<?php the_title(); ?>
+	</a><br />
+
+<?php
 	wp_reset_postdata();
 
 				?>
