@@ -557,11 +557,12 @@ foreach ($authornames as $author_id=>$author_lastname) { ?>
 </div>
 </section>
 
-<!--  Features section -->
+<!--  Quote section -->
 <section class="container TOC-quote">
 <div class="row">
 	<div class="col-md-11 offset-md-1 h-100">
 <?php
+
 $args = array(
     'meta_key'         => 'add-quote-to-toc',
 		'meta_value'   => 'Yes',
@@ -582,61 +583,21 @@ if ($query->have_posts()) :
 <?php
 		 endwhile;
 	else:
+		
 ?>
 
-		 Oops, there are no posts.
+		 Oops, there is no quote. 
 
 <?php
+
 	endif;
 	wp_reset_postdata();
+
 ?>
 		</div>
 	</div>
 </section>
-<section class="container-fluid TOC-features">
-		<div class="card-group">
-			<?php
-			$args = array(
-			  //  'category_name'         => 'feature',
-				'category_name'         => 'On Craft,Conversations',
+<!--  Features section -->
 
-			);
-			$category_posts = new WP_Query($args);
-
-			if ($category_posts->have_posts()) :
-					 while($category_posts->have_posts()) :
-							$category_posts->the_post();
-			?>
-			<div class="card"><a href="<?php echo get_permalink(); ?>">
-		   <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-			 <?php  the_post_thumbnail( 'full', array( 'class'=>'card-img img-fluid' ) );  ?>
-		    <div class="card-body">
-					<h5 class="card-title"><?php
-					$categories = get_the_category();
-
-					if ( ! empty( $categories ) ) {
-					    echo esc_html( $categories[0]->name );
-					}
-
-
-					 	 ?></h5>
-				<p class="card-text"><?php	the_excerpt() ?></p>
-			</div>
-		</a>
-		</div>
-
-			<?php
-					 endwhile;
-				else:
-			?>
-
-					 Oops, there are no features.
-
-			<?php
-				endif;
-				wp_reset_postdata();
-			?>
-
-</section>
 </div>
 </div>
