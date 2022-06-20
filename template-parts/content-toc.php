@@ -327,60 +327,7 @@ foreach ($authornames as $author_id=>$author_lastname) { ?>
 <p>&nbsp;</p>
 <h3>Comics</h3>
 		<div>
-				<?php
-				remove_all_filters('posts_orderby');
-				$comics_args = array(
-					'category_name' => 'comics',
-					'order' => 'ASC',
-					'meta_key' => 'TOC_order',
-					'orderby' => 'meta_value_num',
-					'meta_type' => 'NUMERIC',
-					'nopaging' => 'true',
-				);
-					$comics_loop = new WP_Query($comics_args);
-					//WP_Query('cat=7&orderby=meta_value&meta_key=author_lastname&order=asc&nopaging=true');
-
-
-						while ($comics_loop->have_posts()) : $comics_loop->the_post();
-						 ?>
-						<p>
-							<a href="<?php the_permalink(); ?>">
-							<?php the_title(); ?>
-						</a><br />
-						<span class="author_name"><?php the_author(); ?> </span><br />
-						<?php shenAleph_filter_second_author(); ?>
-
-					</p>
-				<?php endwhile;
-//group posts by author
-
-foreach ($authornames as $author_id=>$author_lastname) {
-	$args = array(
-'category_name' => 'comics',
-'author' => $author_id,
-'orderby' => 'date',
-'order' => 'asc',
-'nopaging' => 'true'
-);
-
-//start WP loop
-$comics_loop_single = new WP_Query($args);
-
-$i = 0;
-//open paragraph for title(s)/author
-echo "<p>";
-	while ($comics_loop_single->have_posts()) : 				$comics_loop_single->the_post();
-	//for each author, print title,  author
-	?>
-
-	<a href="<?php the_permalink(); ?>">
-<?php the_title(); ?>
-	</a><br />
-
-<?php
-	wp_reset_postdata();
-}
-				?>
+ 
 			</div>
 
 
