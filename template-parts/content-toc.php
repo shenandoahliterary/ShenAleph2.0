@@ -147,7 +147,7 @@ URLLINK;
 		<p>&nbsp;</p>
 
 
-		<h3>Novel Excerpts</h3>
+		<h3>Novel Excerpt</h3>
 		<div>
 			<?php
 			remove_all_filters('posts_orderby');
